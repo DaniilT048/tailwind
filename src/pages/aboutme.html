@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <title>Про мене</title>
+    <title>Для замовлень</title>
     <link rel="stylesheet" href="../output.css">
 </head>
 <body>
+<header>
 <nav class="bg-red-950 p-5">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
@@ -32,6 +33,48 @@
         </div>
     </div>
 </nav>
-
+</header>
+<hr>
+<main>
+    <div class="container mx-auto bg-red-950 p-10">
+        <div class="text-2xl text-center text-white pb-5">
+            Заповнюй форму та я особисто передзвоню
+        </div>
+        <form class="pb-4">
+            <div class="grid gap-6 mb-6 md:grid-cols-2">
+                <div>
+                    <label for="first_name" class="block mb-2 text-sm font-medium text-white">Ім'я</label>
+                    <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Ім'я" required />
+                </div>
+                <div>
+                    <label for="last_name" class="block mb-2 text-sm font-medium text-white">Прізвище</label>
+                    <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="Прізвище" required />
+                </div>
+                <div>
+                    <label for="phone" class="block mb-2 text-sm font-medium text-white">Контактний телефон</label>
+                    <input type="tel" id="phone" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="095123123" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required />
+                </div>
+            </div>
+            <div class="mb-6">
+                <label for="email" class="block mb-2 text-sm font-medium text-white">Email address</label>
+                <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="text@gmail.com" required />
+            </div>
+            <button type="submit" class="text-white bg-red-800 hover:bg-red-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">Зв'язатися</button>
+        </form>
+        <div class="text-lg text-center text-white pb-5">
+        Або зателефонуй мені вже зараз. Доречі це безкоштовно
+            <p class="text-base text-center text-white">
+            <a href="tel:+380635311043">Зателефонувати (клік та почнется виклик)</a>
+            </p>
+        </div>
+    </div>
+</main>
+<hr>
+<footer class="bg-red-950 py-6">
+    <div class="grid grid-cols-1 text-white p-6">
+        <h4 class="text-sm">Made Daniil Tismenets 2025</h4>
+        <p class="text-xs">Усі права захищені</p>
+    </div>
+</footer>
 </body>
 </html>

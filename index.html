@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body>
+<header>
 <nav class="bg-red-950 p-5">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
@@ -32,26 +33,15 @@
     </div>
     </div>
 </nav>
+</header>
 <hr>
 <main>
     <div class="container mx-auto bg-red-950 p-10">
-        <div class="text-2xl text-center text-white pb-3">
+        <div class="text-2xl text-center text-white mb-3.5">
             Про сумки з намистин
-        </div>
-        <div class="flex ">
-        <div class="hidden md:block flex-auto w-64 text-lg text-white pr-2">
-            Кожна сумка, яку ви бачите тут, — це результат кропіткої ручної роботи, безмежної уваги до деталей та
-            справжнього захоплення своєю справою. Усі намистини я обираю самостійно, кожну — з особливим теплом і турботою.
-            Вони стають не просто матеріалом, а маленькими частинками історії, яка оживає у ваших руках.
-            Процес створення сумки – це чарівна подорож. Кожна намистина нанизується вручну, ряд за рядом, створюючи
-            унікальний візерунок і текстуру. У цій роботі немає автоматизації чи шаблонів – тільки душа, тепло рук і
-            справжній творчий політ. Я хочу, щоб кожна сумка стала для вас не просто аксесуаром, а джерелом радості та гармонії.
-            Ці сумки – не просто річ. Вони створені для того, щоб дарувати емоції, підкреслювати вашу індивідуальність
-            і бути частинкою вашого щоденного життя. Від вибору кольорів до завершального вузлика – усе робиться з
-            любов’ю і бажанням створити щось дійсно особливе для вас.
-            Оберіть свою ідеальну сумку – ту, яка розкаже вашу історію.
-        </div>
-            <div class="md:hidden sm:block flex-auto w-64 text-xs text-white pr-2">
+            </div>
+        <div class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-3">
+            <div class="text-white text-lg">
                 Кожна сумка, яку ви бачите тут, — це результат кропіткої ручної роботи, безмежної уваги до деталей та
                 справжнього захоплення своєю справою. Усі намистини я обираю самостійно, кожну — з особливим теплом і турботою.
                 Вони стають не просто матеріалом, а маленькими частинками історії, яка оживає у ваших руках.
@@ -63,11 +53,18 @@
                 любов’ю і бажанням створити щось дійсно особливе для вас.
                 Оберіть свою ідеальну сумку – ту, яка розкаже вашу історію.
             </div>
-            <div class="flex-auto w-64">
-                <video class="w-full aspect-video hover:aspect-square" src="src/video/video.mp4" autoplay></video>
-                </div>
+            <div>
+                <video class="h-auto w-auto" src="src/video/video.mp4"></video>
+            </div>
         </div>
-    </div>
+        </div>
 </main>
+<hr>
+<footer class="bg-red-950 py-6">
+    <div class="grid grid-cols-1 text-white p-6">
+    <h4 class="text-sm">Made Daniil Tismenets 2025</h4>
+    <p class="text-xs">Усі права захищені</p>
+    </div>
+</footer>
 </body>
 </html>
